@@ -10,6 +10,11 @@ Both are generously made available by Yann LeCun on [his website](http://yann.le
 Use the following command to download the MNIST dataset onto your server:
 ```sh
 $ python -m digits.download_data mnist ~/mnist
+
+If this not work, and you have more python versions on your computer, then search in which one digits is. 
+On my computer I have python3.5 (standard) and digits is in python2.7. Try then
+$ python2.7 -m digits.download_data mnist ~/mnist
+
 Downloading url=http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz ...
 Downloading url=http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz ...
 Downloading url=http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz ...
